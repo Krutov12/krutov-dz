@@ -21,7 +21,7 @@ int main() {
     ///-----------------------------------------колво телефонов---------------------------------------
     cou = phone_kol();
     //  cin >> cou;
-    mobilephone phones[cou];
+    auto *phones = new mobilephone[cou]; ///>>>>>>new>>>>>
     ///---------------------------------------значения телефонов--------------------------------------
     for (int i = 0; i < cou; i++) {
         cin >> phones[i].weight >> phones[i].is_broken >> phones[i].price;
